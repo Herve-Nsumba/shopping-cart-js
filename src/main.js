@@ -1,37 +1,6 @@
 //Get the "shop" div from HTML where all products will be displayed
 let shop = document.getElementById("shop");
 
-//Data source: Array of objects holding product details
-let shopItemsData = [
-  {
-    id: "product1",
-    name: "Casual Shirt",
-    price: 45,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    img: "images/img-1.jpg",
-  },
-  {
-    id: "product2",
-    name: "Office Shirt",
-    price: 100,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    img: "images/img-2.jpg",
-  },
-  {
-    id: "product3",
-    name: "T Shirt",
-    price: 25,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    img: "images/img-3.jpg",
-  },
-  {
-    id: "product4",
-    name: "Mens Suit",
-    price: 300,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    img: "images/img-4.jpg",
-  },
-];
 //The current cart state
 //Try to get saved cart from the localStorage, otherwise use empty array
 let basket = JSON.parse(localStorage.getItem("data")) || [];
